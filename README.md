@@ -19,7 +19,7 @@ A RESTful API built with Go that performs standard CRUD operations on a products
 To run this project locally, ensure that you have the following prerequisites installed:
 
 ### Prerequisites
-- [Go](https://go.dev/doc/install) (v1.16 or later)
+- [Go](https://go.dev/doc/install) (v1.18 or later)
 - [MongoDB](https://www.mongodb.com/docs/manual/installation/)
 - [Git](https://git-scm.com/)
 
@@ -71,8 +71,8 @@ Create a copy of [.env.example](./.env.example) file in the root directory with 
   }
 }
 ```
-   - Required Fields: `name`, `price`
-   - Response: 201 Created, with the inserted product data.
+   - Required Fields: `title`, `price`
+   - Response: 201 Created, with the inserted product `id`.
 2. Get Products (Paginated)
    - Endpoint: `GET /products?page=1&limit=10`
    - Description: Retrieves all products with pagination.
