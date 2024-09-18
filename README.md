@@ -6,11 +6,11 @@ A RESTful API built with Go that performs standard CRUD operations on a products
 - Uses MongoDB for persistent storage.
 - Dynamic field handling: Only non-empty fields are inserted or updated in MongoDB.
 - Meta timestamps: Automatically handles `createdAt` and `updatedAt` fields.
-- Field validation: Only allowed fields are accepted, with checks for required fields like `name` and `price`.
+- Field validation: Only allowed fields are accepted, with checks for required fields like `title` and `price`.
 
 ##
 ### Table of Contents
-- [Installaton](#installation)
+- [Installation](#installation)
 - [API Endpoints](#api-endpoints)
 - [Running the Project](#running-the-project)
 - [Future Improvements](#future-improvements)
@@ -88,7 +88,7 @@ Create a copy of [.env.example](./.env.example) file in the root directory with 
    - Body Parameters:
 ```json
 {
-  "name": "Updated Product Name",
+  "titel": "Updated Product title",
   "price": 299.99,
   "meta": {
     "updatedAt": "2024-09-17T12:34:56Z"
