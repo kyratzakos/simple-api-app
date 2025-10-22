@@ -51,7 +51,7 @@ net start MongoDB
 ```
 4. Set Environment Variables:
 
-Create a copy of [.env.example](./.env.example) file in the root directory with name `.env`:
+Create a copy of [.env.example](./.env.example) file in the root directory with name `.env`
 
 ##
 ### API Endpoints
@@ -88,7 +88,7 @@ Create a copy of [.env.example](./.env.example) file in the root directory with 
    - Body Parameters:
 ```json
 {
-  "titel": "Updated Product title",
+  "title": "Updated Product title",
   "price": 299.99,
   "meta": {
     "updatedAt": "2024-09-17T12:34:56Z"
@@ -115,3 +115,4 @@ The API will be available at http://localhost:3000.
 - Add unit tests for the CRUD functionality.
 - Implement authentication and authorization.
 - Add more comprehensive validation for request payloads.
+
